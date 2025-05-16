@@ -128,7 +128,7 @@ export const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
           "--pseudo-element-background-image": `linear-gradient(0deg, ${neonColors.firstColor}, ${neonColors.secondColor})`,
           "--pseudo-element-width": `${dimensions.width + borderSize * 2}px`,
           "--pseudo-element-height": `${dimensions.height + borderSize * 2}px`,
-          "--after-blur": `${dimensions.width / 3}px`,
+          "--after-blur": `${dimensions.width / 5}px`,
           width: width !== "full" ? width : "100%",
         } as CSSProperties
       }
@@ -140,7 +140,7 @@ export const NeonGradientCard: React.FC<NeonGradientCardProps> = ({
     >
       <div
         className={cn(
-          "relative size-full min-h-[inherit] rounded-[var(--card-content-radius)] bg-gray-900  p-6",
+          "relative size-full min-h-[inherit] rounded-[var(--card-content-radius)] bg-transparent  p-2",
           "before:absolute before:-left-[var(--border-size)] before:-top-[var(--border-size)] before:-z-10 before:block",
           "before:h-[var(--pseudo-element-height)] before:w-[var(--pseudo-element-width)] before:rounded-[var(--border-radius)] before:content-['']",
           "before:bg-[linear-gradient(0deg,var(--neon-first-color),var(--neon-second-color))] before:bg-[length:100%_200%]",

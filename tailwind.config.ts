@@ -107,13 +107,64 @@ export default {
             backgroundPosition: "0% 50%",
             transform: "rotate(-5deg) scale(0.9)"
           }
+        },
+        "shimmer-slide": {
+          "to": {
+            transform: "translate(calc(100cqw - 100%), 0)"
+          }
+        },
+        "spark-spin": {
+          "0%": {
+            rotate: "0deg"
+          },
+          "15%, 35%": {
+            rotate: "90deg"
+          },
+          "65%, 85%": {
+            rotate: "270deg"
+          },
+          "100%": {
+            rotate: "360deg"
+          }
+        },
+        "slide-across": {
+          "to": {
+            translate: "calc(100cqw + 100%) -50%"
+          }
+        },
+        "lazy-spin": {
+          "0%": {
+            transform: "rotate(0deg)"
+          },
+          "100%": {
+            transform: "rotate(360deg)"
+          }
+        },
+        "spin-around": {
+          "to": {
+            transform: "rotate(1turn)"
+          }
+        },
+        "border-spin": {
+          "0%": {
+            transform: "rotate(0deg)"
+          },
+          "100%": {
+            transform: "rotate(360deg)"
+          }
         }
       },
       animation: {
         "background-position-spin": "background-position-spin 3000ms infinite alternate",
         "shiny-text": "shiny-text 12s infinite",
         "pink-shine": "pink-shine 8s infinite ease-in-out",
-        aurora: "aurora 8s ease-in-out infinite alternate"
+        "aurora": "aurora 8s ease-in-out infinite alternate",
+        "shimmer-slide": "shimmer-slide var(--speed) ease-in-out infinite alternate",
+        "spark-spin": "spark-spin calc(var(--speed) * 2) infinite linear",
+        "slide-across": "slide-across var(--speed) infinite linear",
+        "lazy-spin": "lazy-spin 2s infinite linear",
+        "spin-around": "spin-around var(--speed) infinite linear",
+        "border-spin": "border-spin 4s linear infinite"
       }
   	}
   },
