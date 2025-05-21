@@ -147,7 +147,7 @@ anchor`;
             
             {/* CodeSnippet Card - positioned as overlay on the editor */}
             <div 
-              className="absolute top-[280px] right-20 w-[400px] h-[180px] z-50"
+              className="absolute top-[225px] left-[400px] w-[550px] h-[350px] z-50"
               style={{
                 transform: "perspective(800px) translate3d(0, 0, 40px) rotateX(5deg)",
                 boxShadow: "rgba(0, 0, 0, 0.35) 0px 15px 30px, rgba(0, 0, 0, 0.25) 0px 10px 10px, rgba(0, 0, 0, 0.4) 0px -3px 10px -3px inset",
@@ -170,9 +170,9 @@ anchor`;
                 <div className="relative z-20 h-full w-full">
                   <CodeSnippet 
                     code={snippetCode}
-                    theme="tokyo"
-                    filename="analytics.js"
-                    maxHeight="180px"
+                    language="rust"
+                    filename="anchor.rs"
+                    maxHeight="250px"
                   />
                 </div>
               </Card>

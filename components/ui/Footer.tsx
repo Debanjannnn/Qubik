@@ -1,10 +1,17 @@
 import { Button } from "@/components/ui/button"; // Assuming Button component exists
 import { Play } from "lucide-react"; // Assuming Play icon from lucide-react
 import { GridBackgroundDemo } from "./background";
+import { Poppins } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 export function Footer() {
   return (
-    <div className="py-12 px-4 sm:px-6 md:py-20 overflow-hidden">
+    <div className={cn("py-12 px-4 sm:px-6 md:py-20 overflow-hidden", poppins.className)}>
       <GridBackgroundDemo>
         <div className="relative w-full max-w-7xl mx-auto rounded-3xl overflow-hidden my-16">
           <div className=" text-white p-16 py-20 relative z-10">
