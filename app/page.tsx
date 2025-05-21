@@ -75,7 +75,7 @@ export default function Home() {
           <p>All systems operational</p>
         </div>
         <div>
-          <p>© {currentYear} Paper-Plane. All rights reserved.</p>
+          <p>© {currentYear} Qubik. All rights reserved.</p>
         </div>
       </div>
     </div>

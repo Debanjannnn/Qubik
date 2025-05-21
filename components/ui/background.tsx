@@ -12,7 +12,7 @@ export function GridBackgroundDemo({ children }: { children: React.ReactNode }) 
     <div className="relative flex w-full items-center justify-center bg-black z-0">
           <Particles
         className="absolute inset-0 z-0"
-        quantity={300}
+        quantity={150}
         ease={100}
        
         refresh

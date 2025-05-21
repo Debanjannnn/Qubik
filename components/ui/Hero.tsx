@@ -31,7 +31,10 @@ export const Hero = () => {
     <GridBackgroundDemo>
     <section className="min-h-screen w-full flex flex-col z-10 items-center justify-center px-4 text-center">
     <div className='pb-6'>
-    <div
+    <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
         className={cn(
           "group rounded-full border border-black/5 bg-gradient-to-r from-black via-gray-900 to-black text-sm max-w-xs transition-all ease-in hover:cursor-pointer hover:bg-neutral-200/10 dark:border-white/5 dark:hover:bg-neutral-800/50 shadow-[0_0_12px_rgba(226,62,107,0.5)] hover:shadow-[0_0_24px_rgba(226,62,107,0.8)] hover:translate-y-[-2px] transform-gpu",
         )}
@@ -45,13 +48,19 @@ export const Hero = () => {
             <div className="absolute h-3 w-3 rounded-full bg-green-500/40 shadow-[0_0_8px_rgba(74,222,128,0.4)] animate-pulse"></div>
             <div className="h-2 w-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(74,222,128,0.8)] animate-pulse"></div>
           </div>
-          <span className={cn(
-                "relative ",
-                poppins.className
-              )}>Still Cooking , Stay Tuned !</span>
+          <motion.span 
+            className={cn("relative", poppins.className)}
+            initial={{ scale: 1 }}
+            animate={{ 
+              scale: [1, 1.05, 1],
+              y: [0, -2, 0]
+            }}
+          >
+            Still Cooking , Stay Tuned !
+          </motion.span>
           
         </AnimatedShinyText>
-      </div>
+      </motion.div>
       </div>
       <div className="space-y-2">
         <motion.div

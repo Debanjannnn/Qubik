@@ -16,7 +16,7 @@ export function CodeSnippet({
   code,
   language = "typescript",
   theme = "tokyo",
-  maxHeight = "300px",
+  maxHeight = "0px",
   showLineNumbers = true,
   filename
 }: CodeSnippetProps) {
